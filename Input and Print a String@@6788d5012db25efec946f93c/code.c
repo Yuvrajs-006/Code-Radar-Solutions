@@ -3,9 +3,9 @@
 
 int main() {
     char n[100];
-    scanf("%s",n);
-    printf("You entered: %s",n);
-    
-     
+    scanf("%c",n);
+    printf("You entered: %c",n);
+
+
     return 0;
 }
