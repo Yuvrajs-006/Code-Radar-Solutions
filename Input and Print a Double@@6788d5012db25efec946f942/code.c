@@ -4,8 +4,8 @@
 
 int main() {
     double n;
-    scanf("%.4lf",&n);
-    printf("You entered %.4lf",n);
+    scanf("%lf",&n);
+    printf("You entered %lf",n);
 
 
     return 0;
