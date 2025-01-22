@@ -9,7 +9,5 @@ int main() {
     printf("%.2f",p);
 
 
-
-
     return 0;
 }
