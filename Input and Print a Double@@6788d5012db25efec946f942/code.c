@@ -3,9 +3,9 @@
 
 
 int main() {
-    double n;
-    scanf("%lf",&n);
-    printf("You entered %lf",n);
+    float n;
+    scanf("%.4f",&n);
+    printf("You entered %.4f",n);
 
 
     return 0;
