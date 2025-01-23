@@ -1,25 +1,22 @@
-
 #include <stdio.h>
-#include <math.h>
- 
-int setBitNumber(int n)
+#define BITS sizeof(int) * 8 // Total bits required to represent integer
+
+int main()
 {
- 
-    if (n == 0)
-        return 0;
- 
-    int msb = 0;
-    n = n / 2;
-    while (n != 0) {
-        n = n / 2;
-        msb++;
-    }
- 
-    return (1 << msb);
-}
-int main() {
-    int n = 273;
-    printf("%d",setBitNumber(n));
- 
+    int num, msb;
+
+    /* Input number from user */
+    printf("Enter any number: ");
+    scanf("%d", &num);
+
+    /* Move first bit of 1 to highest order */
+    msb = 1 << (BITS - 1);
+
+    /* Perform bitwise AND with msb and num */
+    if(num & msb)
+        printf("Set");
+    else
+        printf("Not Set");
+
     return 0;
 }
