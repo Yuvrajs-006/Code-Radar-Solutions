@@ -7,8 +7,8 @@ int main() {
     if(a&&b >0){
         printf("True");
     }
-    else(
+    else{
         printf("False");
-    )
+    }
     return 0;
 }
