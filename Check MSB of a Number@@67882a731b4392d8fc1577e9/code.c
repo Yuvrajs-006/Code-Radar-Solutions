@@ -6,7 +6,6 @@ int main()
     int num, msb;
 
     /* Input number from user */
-    printf("Enter any number: ");
     scanf("%d", &num);
 
     /* Move first bit of 1 to highest order */
