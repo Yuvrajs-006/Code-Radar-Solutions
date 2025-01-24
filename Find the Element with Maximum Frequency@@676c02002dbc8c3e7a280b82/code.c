@@ -36,12 +36,12 @@ int main() {
 		}
     }
     int n2=arr2[0];
-    for(int i=0;i<n;i++){
-        if(arr1[i]==n2){
-            printf("%d",arr[i]);
+    // for(int i=0;i<n;i++){
+    //     if(arr1[i]==n2){
+    //         printf("%d",arr[i]);
 
-        }
-    }
+    //     }
+    // }
     // printf("%d",n2);
 }
 
