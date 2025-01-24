@@ -22,7 +22,7 @@ int main() {
         arr[index]=c;
         index++;
     }
-    printf("%d",arr[1]);
+    printf("%d",arr[0]);
 }
 
 
