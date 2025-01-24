@@ -13,7 +13,7 @@ int main() {
     int index=0;
     for(int i=0;i<n;i++){
         int n1=arr[i];
-        int c=0;
+        int c=1;
         for(int j=i+1;j<n;j++){
             if(arr[j]==n1){
                 c++;
@@ -38,7 +38,7 @@ int main() {
     int n2=arr2[0];
     for(int i=0;i<n;i++){
         if(arr1[i]==n2){
-            printf("%d",arr1[i]);
+            printf("%d",arr[i]);
 
         }
     }
