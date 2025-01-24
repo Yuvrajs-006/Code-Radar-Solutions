@@ -18,10 +18,9 @@ int main() {
             if(arr[j]==n){
                 c++;
             }
-            arr[index]=c;
-            index++;
-
         }
+        arr[index]=c;
+        index++;
     }
     printf("%d",arr[1]);
 }
