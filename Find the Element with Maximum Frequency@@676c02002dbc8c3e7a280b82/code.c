@@ -15,7 +15,7 @@ int main() {
         int n1=arr[i];
         int c=0;
         for(int j=i+1;j<n;j++){
-            if(arr[j]==n){
+            if(arr[j]==n1){
                 c++;
             }
         }
