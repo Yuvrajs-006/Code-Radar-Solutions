@@ -8,6 +8,7 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int c=0;
 	for(int i=1;i<size;i++){
 		if(arr[c]!=i){
 			printf("%d",i);
