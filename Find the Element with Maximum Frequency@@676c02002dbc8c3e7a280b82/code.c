@@ -22,7 +22,10 @@ int main() {
         arr[index]=c;
         index++;
     }
-    int arr2[]=arr1;
+    int arr2[n];
+    for(int i=0;i<n;i++){
+        arr2[i]=arr1[i];
+    }
 	for(int i=0;i<n;i++){
 		for(int j=0;j<n-i;j++){
 			if(arr2[j]>arr2[j+1]){
