@@ -39,10 +39,10 @@ int main() {
     for(int i=0;i<n;i++){
         if(arr1[i]==n2){
             printf("%d",arr[i]);
-            break;
+
         }
     }
-    printf("%d",n2);
+    // printf("%d",n2);
 }
 
 
