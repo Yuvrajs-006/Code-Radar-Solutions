@@ -22,7 +22,22 @@ int main() {
         arr[index]=c;
         index++;
     }
-    printf("%d",arr[0]);
+    int arr2[]=arr1;
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n-i;j++){
+			if(arr2[j]>arr2[j+1]){
+				int temp=arr2[j];
+				arr2[j]=arr2[j+1];
+				arr2[j+1]=temp;
+			}
+		}
+    }
+    int n2=arr[n-1];
+    for(int i=0;i<n;i++){
+        if(arr1[i]==n2){
+            printf("%d",arr1[i]);
+        }
+    }
 }
 
 
