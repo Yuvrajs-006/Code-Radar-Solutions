@@ -12,9 +12,10 @@ int main() {
     int arr1[n];
     int index=0;
     for(int i=0;i<n;i++){
+        int n1=arr[i];
         int c=0;
         for(int j=i+1;j<n;j++){
-            if(arr[i]==arr[j]){
+            if(arr[j]==n){
                 c++;
             }
         arr[index]=c;
