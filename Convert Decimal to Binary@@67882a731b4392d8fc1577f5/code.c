@@ -13,6 +13,6 @@ int main() {
         n/=2;
 
     }
-    printf("%d",b);
+    printf("%s",b);
     return 0;
 }
