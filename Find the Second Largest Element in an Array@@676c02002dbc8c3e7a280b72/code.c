@@ -16,7 +16,7 @@ int main(){
             }
         }
     }
-    if(arr[]==arr[1]){
+    if(arr[0]==arr[1]){
         printf("%d",-1);
     }
     else{
