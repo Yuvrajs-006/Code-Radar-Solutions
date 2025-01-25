@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.c>
 
 
-int main.c() {
+int main() {
     int n;
     scanf("%d",&n);
     int b=0;
