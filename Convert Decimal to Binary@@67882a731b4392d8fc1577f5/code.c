@@ -11,9 +11,9 @@ int main() {
         int rem=n%2;
         int num=0;
         for(int i=0;i<=c;i++){
-            num+=10*i;
+            num*=10;
         }
-        b+=num*rem;
+        b*rem;
         n/=2;
         c++;
     }
