@@ -9,7 +9,7 @@ int main() {
     int c=0;
     while(n>0){
         int rem=n%2;
-        b+=rem;
+        b+=char rem;
         n/=2;
 
     }
