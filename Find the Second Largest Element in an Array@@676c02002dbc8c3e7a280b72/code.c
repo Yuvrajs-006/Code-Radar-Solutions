@@ -16,7 +16,7 @@ int main(){
             }
         }
     }
-    if(arr[n-1]==arr[n-2]){
+    if(arr[n-1]==arr[0]){
         printf("%d",-1);
     }
     else{
