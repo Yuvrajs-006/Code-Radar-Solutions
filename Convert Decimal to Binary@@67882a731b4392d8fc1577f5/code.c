@@ -9,7 +9,7 @@ int main() {
     int c=0;
     while(n>0){
         int rem=n%2;
-        int num=int pow(c,10);
+        int num=pow(10,c)*rem;
         b+=num*rem;
         n/=2;
     }
