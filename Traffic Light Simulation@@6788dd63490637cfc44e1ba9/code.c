@@ -6,13 +6,13 @@ int main(){
     char n;
     scanf("%c",&n);
     char arr[3]={"R","Y","G"};
-    if(n="R"){
+    if(n==arr[0]){
         printf("Stop");
     }
-    else if(n="G"){
+    else if(n==arr[2]){
         printf("Go");
     } 
-    else if(n="Y"){
+    else if(n==arr[1]){
         printf("Slow Down");
     }
     else{
