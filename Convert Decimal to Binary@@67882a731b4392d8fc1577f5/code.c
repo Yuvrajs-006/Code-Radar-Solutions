@@ -5,14 +5,14 @@
 int main() {
     int n;
     scanf("%d",&n);
-    char b[100];
+    int b=0;
     int c=0;
     while(n>0){
         int rem=n%2;
-        b+=char rem;
+        int num=pow(c,10);
+        b+=num*rem;
         n/=2;
-
     }
-    printf("%s",b);
+    printf("%d",b);
     return 0;
 }
