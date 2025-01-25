@@ -45,7 +45,7 @@ int main()
     {
         if (fr1[i] != 0)
         {
-            printf("%d %d", arr1[i], fr1[i]);
+            printf("%d %d\n", arr1[i], fr1[i]);
         }
 	}
 	return 0;
