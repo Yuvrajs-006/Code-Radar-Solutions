@@ -10,7 +10,7 @@ int main() {
     while(n>0){
         int rem=n%2;
         b=(b*10)+rem;
-        n=n/10;
+        n=n/2;
         // c++;
 
     }
