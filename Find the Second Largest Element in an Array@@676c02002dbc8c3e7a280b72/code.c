@@ -16,11 +16,11 @@ int main(){
             }
         }
     }
-    if(arr[0]==arr[1]){
+    if(arr[n-1]==arr[n-2]){
         printf("%d",-1);
     }
     else{
-        printf("%d",arr[0]);
+        printf("%d",arr[n-2]);
     }
     
 }
