@@ -9,11 +9,11 @@ int main() {
     int c=0;
     while(n>0){
         int rem=n%2;
-        int num=1;
+        int num=0;
         for(int i=0;i<=c;i++){
             num*=10;
         }
-        b*rem;
+        b=num*rem;
         n/=2;
         c++;
     }
