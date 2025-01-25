@@ -6,12 +6,12 @@ int main() {
     int n;
     scanf("%d",&n);
     int b=0;
-    // int c=1;
+    int c=1;
     while(n>0){
         int rem=n%2;
-        b=(b*10)+rem;
+        b=c*rem;
         n=n/2;
-        // c++;
+        c++;
 
     }
     printf("%d",b);
