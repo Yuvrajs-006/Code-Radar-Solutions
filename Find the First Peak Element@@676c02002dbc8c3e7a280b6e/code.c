@@ -16,13 +16,13 @@ int main() {
                 break;
             }
         }
-        else if(i!=0 && i!=n-1){
+        else if(i!=0 && i!=(n-1)){
             if((arr[i]>arr[i-1]) &&(arr[i]>arr[i+1])){
                 printf("%d",arr[i]);
                 break;
             }
         }
-        else if(i==n-1){
+        else if(i==(n-1)){
             if(arr[i]>arr[i-1]){
                 printf("%d",arr[i]);
                 break;
