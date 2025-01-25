@@ -1,15 +1,15 @@
 #include <stdio.h>
-
+#include <math.h>
 
 
 int main() {
     int n;
     scanf("%d",&n);
     int b=0;
-    int c=1;
+    int c=0;
     while(n>0){
         int rem=n%2;
-        b=c*rem;
+        b=pow(c,10)*rem;
         n=n/2;
         c++;
 
