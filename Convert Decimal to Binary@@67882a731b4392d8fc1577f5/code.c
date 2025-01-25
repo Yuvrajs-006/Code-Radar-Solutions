@@ -9,9 +9,13 @@ int main() {
     int c=0;
     while(n>0){
         int rem=n%2;
-        int num=pow.pow(10,c)*rem;
+        int num=0;
+        for(int i=0;i<=c;i++){
+            num+=10*i;
+        }
         b+=num*rem;
         n/=2;
+        c++;
     }
     printf("%d",b);
     return 0;
