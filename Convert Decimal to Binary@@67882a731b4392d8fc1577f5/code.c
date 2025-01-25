@@ -2,7 +2,7 @@
 #include <math.h>
 
 
-int main() {
+int main.c:() {
     int n;
     scanf("%d",&n);
     int b=0;
