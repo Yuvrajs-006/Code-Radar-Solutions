@@ -6,17 +6,18 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int min=arr[0];
+    int max=arr[0];
     for(int i=0;i<n;i++){
-        for(int j=0;j<n-i;j++){
-            if(arr[j]<arr[j+1]){
-                int temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-
-            }
+        if(min>arr[i]){
+            min=arr[i];
         }
+        if(max<arr[i]){
+            max=arr[i];
+        }
+
     }
-    printf("%d %d",arr[0],arr[n-1]);
+    printf("%d %d",min,max);
  
     return 0;
 }
