@@ -42,7 +42,7 @@ int main(){
                 count++;
             }
         }
-        printf("%d %d",num,count);
+        printf("%d %d\n",num,count);
         count=0;
     }
 
