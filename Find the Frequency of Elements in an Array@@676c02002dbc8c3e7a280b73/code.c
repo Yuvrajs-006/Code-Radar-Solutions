@@ -2,20 +2,17 @@
 
 
 
-
-
-
 int main(){
-    int n;
-	scanf("%d",&n);
-	int arr[n];
-	for(int i=0;i<n;i++){
+	int s;
+	scanf("%d",&s);
+	int arr[s];
+	for(int i=0;i<s;i++){
 		scanf("%d",&arr[i]);
 	}
-	int arr1[n];
+	int arr1[s];
 	int c=0;
 	if(s%2==0){
-		for(int i=0;i<n;i++){
+		for(int i=0;i<s;i++){
 			if(arr[i]!=arr[i+1]){
 				arr1[c]=arr[i];
 				c++;
@@ -23,8 +20,8 @@ int main(){
 		}
 	}
 	else{
-		for(int i=0;i<n;i++){
-			if(i==n-1){
+		for(int i=0;i<s;i++){
+			if(i==s-1){
 				arr1[c]=arr[i];
 				c++;
 			}
@@ -34,20 +31,15 @@ int main(){
 			}
 		}
 	}
-    for(int i=0;i<c;i++){
-        int num=arr1[i];
-        int count =0;
-        for(int j=0;j<n;j++){
-            if(arr[j]==num){
-                count++;
-            }
-        }
-        printf("%d %d\n",num,count);
-        count=0;
-    }
-
-
-
-
-	return 0;
+	for(int i=0;i<c;i++){
+		int num=arr1[i];
+		int count =0;
+		for(int j=0;j<s;j++){
+			if(arr[j]==num){
+				count++;
+			}
+		}
+		printf("%d %d\n",num,count);
+		count =0;
+	}
 }
