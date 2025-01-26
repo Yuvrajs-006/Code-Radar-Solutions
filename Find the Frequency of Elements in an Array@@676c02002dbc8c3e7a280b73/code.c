@@ -5,48 +5,49 @@
 
 
 
-int main()
-{
-    int arr1[100], fr1[100];
-    int n, i, j, ctr;
-
-    // Prompt user for input
-    scanf("%d", &n);
-
-    // Input elements for the array
-    for (i = 0; i < n; i++)
-    {
-        scanf("%d", &arr1[i]);
-        fr1[i] = -1; // Initialize frequency array with -1
-    }
-
-    // Count the frequency of each element in the array
-    for (i = 0; i < n; i++)
-    {
-        ctr = 1; // Initialize counter for each element
-        for (j = i + 1; j < n; j++)
-        {
-            if (arr1[i] == arr1[j])
-            {
-                ctr++;     // Increment counter for matching elements
-                fr1[j] = 0; // Mark the duplicate element's frequency as 0
+int main(){
+    int n;
+	scanf("%d",&n);
+	int arr[n];
+	for(int i=0;i<n;i++){
+		scanf("%d",&arr[i]);
+	}
+	int arr1[n];
+	int c=0;
+	if(s%2==0){
+		for(int i=0;i<n;i++){
+			if(arr[i]!=arr[i+1]){
+				arr1[c]=arr[i];
+				c++;
+			}
+		}
+	}
+	else{
+		for(int i=0;i<n;i++){
+			if(i==n-1){
+				arr1[c]=arr[i];
+				c++;
+			}
+			if(arr[i]==arr[i+1]){
+				arr1[c]=arr[i];
+				c++;
+			}
+		}
+	}
+    for(int i=0;i<c;i++){
+        int num=arr1[i];
+        int count =0;
+        for(int j=0;j<n;j++){
+            if(arr[j]==num){
+                count++;
             }
         }
-
-        // If frequency array value is not marked as 0, set it to the counter
-        if (fr1[i] != 0)
-        {
-            fr1[i] = ctr;
-        }
+        printf("%d %d",num,count);
+        count=0;
     }
 
-    // Print the frequency of each element in the arra
-    for (i = 0; i < n; i++)
-    {
-        if (fr1[i] != 0)
-        {
-            printf("%d %d\n", arr1[i], fr1[i]);
-        }
-	}
+
+
+
 	return 0;
 }
