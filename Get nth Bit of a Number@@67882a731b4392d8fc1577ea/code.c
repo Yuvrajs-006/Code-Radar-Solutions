@@ -9,7 +9,7 @@ int main() {
         num=num*10 +rem;
         n/=2;
     }
-    int bitnum[10];
+    int bitnum[100];
     int c=0;
     while(num>0){
         int rem=num%10;
