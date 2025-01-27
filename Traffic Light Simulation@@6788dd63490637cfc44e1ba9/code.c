@@ -8,13 +8,13 @@ int main(){
     char a[]="R";
     char b[]="Y";
     char c[]="G";
-    if(n=a[0]){
+    if(n==a[0]){
         printf("Stop");
     }
-    else if(n=c[0]){
+    else if(n==c[0]){
         printf("Go");
     } 
-    else if(n=b[0]){
+    else if(n==b[0]){
         printf("Slow Down");
     }
     else{
