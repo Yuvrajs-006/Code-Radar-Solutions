@@ -3,8 +3,8 @@
 
 
 int main(){
-    char n;
-    scanf("%c",&n);
+    char n[10];
+    scanf("%s",&n);
     char arr[3]={"R","Y","G"};
     if(n==arr[0]){
         printf("Stop");
