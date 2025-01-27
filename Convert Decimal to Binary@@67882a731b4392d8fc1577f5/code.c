@@ -1,22 +1,18 @@
 #include <stdio.h>
- 
+#include <math.h>
 int main(){
     int n;
     scanf("%d",&n);
+    int c=0;
     int b=0;
     while(n>0){
         int rem=n%2;
-        b=(b*10)+rem;
+        b=pow(10,c)*rem;
         n/=2;
+        c++;
 
     }
-    int nb=0;
-    while(b>0){
-        int rem=b%10;
-        nb=(nb*10)+rem;
-        b/=10;
-    }
-    printf("%d",nb);
+    printf("%d",b);
     
     return 0;
 }
