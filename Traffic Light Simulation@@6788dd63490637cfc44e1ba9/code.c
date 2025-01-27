@@ -15,8 +15,8 @@ int main(){
     else if(n==arr[1]){
         printf("Slow Down");
     }
-    else{
-        printf("Invalid input");
-    }
+    // else{
+    //     printf("Invalid input");
+    // }
     return 0;
 }
