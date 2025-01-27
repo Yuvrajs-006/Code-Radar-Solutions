@@ -3,8 +3,8 @@
 
 
 int main(){
-    char n[10];
-    scanf("%s",&n);
+    char n;
+    scanf("%c",&n);
     if(n=="R"){
         printf("Stop");
     }
