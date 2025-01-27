@@ -5,18 +5,21 @@
 int main(){
     char n;
     scanf("%c",&n);
-    char arr[3]="RYG"
-    if(n==arr[0]){
+    char a,b,c;
+    a="R";
+    b="Y";
+    c="G";
+    if(n==a){
         printf("Stop");
     }
-    else if(n==arr[2]){
+    else if(n==c){
         printf("Go");
     } 
-    else if(n==arr[1]){
+    else if(n==b){
         printf("Slow Down");
     }
-    // else{
-    //     printf("Invalid input");
-    // }
+    else{
+        printf("Invalid input");
+    }
     return 0;
 }
