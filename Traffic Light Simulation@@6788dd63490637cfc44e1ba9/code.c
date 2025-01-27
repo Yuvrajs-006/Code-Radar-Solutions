@@ -5,7 +5,7 @@
 int main(){
     char n;
     scanf("%c",&n);
-    char arr[]="RYG"
+    char arr[3]="RYG"
     if(n==arr[0]){
         printf("Stop");
     }
