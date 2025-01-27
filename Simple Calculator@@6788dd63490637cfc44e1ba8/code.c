@@ -7,7 +7,7 @@ int main() {
     scanf("%d%d");
     char n;
     scanf("%c",&n);
-    char o[4]="+-/*"
+    char o[4]="+-/*";
     if(n==o[0]){
         printf("YEs");
     }
