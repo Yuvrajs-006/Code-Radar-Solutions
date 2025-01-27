@@ -9,13 +9,13 @@ int main() {
         num=num*10 +rem;
         n/=2;
     }
-    int bitnum[100];
+    int bitnum[10];
     int c=0;
     while(num>0){
         int rem=num%10;
         bitnum[c]=rem;
-        n/=10;
         c++;
+        n/=10;
     }
     printf("%d",bitnum[k]);
     return 0;
