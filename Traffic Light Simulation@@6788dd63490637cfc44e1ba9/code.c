@@ -5,14 +5,13 @@
 int main(){
     char n[10];
     scanf("%s",&n);
-    char arr[3]={"R","Y","G"};
-    if(n==arr[0]){
+    if(n=="R"){
         printf("Stop");
     }
-    else if(n==arr[2]){
+    else if(n=="G"){
         printf("Go");
     } 
-    else if(n==arr[1]){
+    else if(n=="Y"){
         printf("Slow Down");
     }
     else{
