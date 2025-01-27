@@ -5,7 +5,7 @@
 int clearBit(int N, int K) {
   
     // Bitwise AND with the mask
-    return (N & (~(1 << (K - 1))));
+    return (N & (~(1 << (K))));
 }
 
 
