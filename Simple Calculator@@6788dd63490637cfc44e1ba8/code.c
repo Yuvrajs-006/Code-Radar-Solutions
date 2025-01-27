@@ -8,7 +8,7 @@ int main() {
     char n;
     scanf("%c",&n);
     char o[4]="+-/*";
-    if(n==o[0]){
+    if(n=='+'){
         printf("YEs");
     }
     return 0;
