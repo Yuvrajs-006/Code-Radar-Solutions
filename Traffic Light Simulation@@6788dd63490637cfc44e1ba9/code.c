@@ -3,19 +3,20 @@
 
 
 int main(){
-    char n[100];
-    scanf("%s",&n);
-    if(n=="R"){
+    char n;
+    scanf("%c",&n);
+    char arr[]="RYG"
+    if(n==arr[0]){
         printf("Stop");
     }
-    else if(n=="G"){
+    else if(n==arr[2]){
         printf("Go");
     } 
-    else if(n=="Y"){
+    else if(n==arr[1]){
         printf("Slow Down");
     }
-    // else{
-    //     printf("Invalid input");
-    // }
+    else{
+        printf("Invalid input");
+    }
     return 0;
 }
