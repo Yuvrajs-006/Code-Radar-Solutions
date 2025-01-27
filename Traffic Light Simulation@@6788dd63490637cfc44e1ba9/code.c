@@ -9,13 +9,13 @@ int main(){
     a="R";
     b="Y";
     c="G";
-    if(n==a){
+    if(n=a){
         printf("Stop");
     }
-    else if(n==c){
+    else if(n=c){
         printf("Go");
     } 
-    else if(n==b){
+    else if(n=b){
         printf("Slow Down");
     }
     else{
