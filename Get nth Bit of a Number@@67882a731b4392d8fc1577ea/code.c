@@ -14,8 +14,8 @@ int main() {
     while(num>0){
         int rem=num%10;
         bitnum[c]=rem;
-        c++;
         num/=10;
+        c++;
     }
     printf("%d",bitnum[k]);
     return 0;
