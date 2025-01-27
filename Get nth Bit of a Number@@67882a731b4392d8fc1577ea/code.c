@@ -15,7 +15,7 @@ int main() {
         int rem=num%10;
         bitnum[c]=rem;
         c++;
-        n/=10;
+        num/=10;
     }
     printf("%d",bitnum[k]);
     return 0;
