@@ -5,7 +5,8 @@
 int main() {
     char n;
     scanf("%c",&n);
-    if(n<='a' && n>='z'){
+    int a=n;
+    if(a>=97 && a<=122){
         printf("Lowercase");
     }
     else{
