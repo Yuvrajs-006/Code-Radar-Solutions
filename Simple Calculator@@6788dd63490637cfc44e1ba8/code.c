@@ -7,4 +7,13 @@ int main(){
     if(n='+'){
         printf("%d",a+b);
     }
+    else if(n='-'){
+        printf("%d",a-b);
+    }
+    else if(n='*'){
+        printf("%d",a*b);
+    }
+    else if(n='/'){
+        printf("%d",a/b);
+    }
 }
