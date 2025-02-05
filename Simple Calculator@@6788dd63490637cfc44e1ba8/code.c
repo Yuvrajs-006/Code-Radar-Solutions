@@ -2,14 +2,26 @@
 
 
 
-int main() {
-    int a,b;
-    scanf("%d%d");
-    char n;
-    scanf("%c",&n);
-    char o[4]="+-/*";
-    if(n=='+'){
-        printf("YEs");
-    }
-    return 0;
+int main(){
+	int a,b;
+	char n;
+	scanf("%d%d\n",&a,&b);
+	scanf("%c",&n);
+	switch(n){
+		case '+':
+			printf("%d",a+b);
+			break;
+		case '-':
+			printf("%d",a-b);
+			break;
+		case '*':
+			printf("%d",a*b);
+			break;
+		case '/':
+			printf("%d",a/b);
+			break;
+		default:
+			printf("invalid operator");
+			break;
+	}
 }
