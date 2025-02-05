@@ -4,20 +4,7 @@ int main(){
 	char n;
 	scanf("%d%d",&a,&b);
 	scanf("%c",&n);
-	switch(n){
-		case '+':
-			printf("%d",a+b);
-			break;
-		case '-':
-			printf("%d",a-b);
-			break;
-		case '*':
-			printf("%d",a*b);
-			break;
-		case '/':
-			printf("%d",a/b);
-			break;
-        default:
-            printf("error");
-	}
+    if(n=='+'){
+        printf("%d",a+b);
+    }
 }
