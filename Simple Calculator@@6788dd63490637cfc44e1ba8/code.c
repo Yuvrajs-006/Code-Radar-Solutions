@@ -13,15 +13,15 @@ int main(){
     else if(n='*'){
         printf("%d",a*b);
     }
-    else if(n='/'){
-        if(b==0){
-            printf("error");
-        }
-        else{
-            printf("%d",a/b);
-        }
-    }
-    else{
-        printf("error");
-    }
+    // else if(n='/'){
+    //     if(b==0){
+    //         printf("error");
+    //     }
+    //     else{
+    //         printf("%d",a/b);
+    //     }
+    // }
+    // else{
+    //     printf("error");
+    // }
 }
