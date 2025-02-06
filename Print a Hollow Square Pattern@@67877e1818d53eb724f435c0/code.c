@@ -10,6 +10,9 @@ int main() {
             if(i==j || i==1|| i==n){
                 printf("*");
             }
+            else{
+                printf(" ");
+            }
         }
         printf("\n");
     }
