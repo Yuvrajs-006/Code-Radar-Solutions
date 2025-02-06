@@ -4,9 +4,9 @@
 
 int main(){
 	int a,b;
-	char n[100];
+	char n;
 	scanf("%d%d",&a,&b);
-	scanf("%s",n);
+	scanf("%c",&n);
 	switch(n){
 		case '+':
 			printf("%d",a+b);
