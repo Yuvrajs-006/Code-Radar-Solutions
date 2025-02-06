@@ -16,8 +16,17 @@ int main(){
             }
         }
     }
-    if(arr[0]==arr[n-1]){
-        printf("%d",-1);
+    int c=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]==arr[i+1]){
+            c=0;
+        }
+        else{
+            c+=1;
+        }
+    }
+    if(c>0){
+        printf("-1");
     }
     else{
         printf("%d",arr[n-2]);
