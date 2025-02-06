@@ -17,10 +17,10 @@ int main(){
         }
     }
     int size=sizeof(arr)/sizeof(arr[0]);
-    if(arr[0]==arr[size-1]){
+    if(arr[0]==arr[size]){
         printf("-1");
     }
     else{
-        printf("%d",arr[size-2]);
+        printf("%d",arr[size-1]);
     }
 }
