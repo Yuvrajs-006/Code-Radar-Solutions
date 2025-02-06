@@ -9,8 +9,8 @@ int main() {
         for(int j=i;j<=n;j++){
             printf(" ");
         }
-        for(int j=1;j<=i;j++){
-            printf("* "*(2*n-1));
+        for(int j=1;j<=2*i-1;j++){
+            printf("* ");
         }
     }
     printf("\n")
