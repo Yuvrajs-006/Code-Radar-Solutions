@@ -21,6 +21,6 @@ int main(){
         printf("-1");
     }
     else{
-        printf("%d",arr[size-1]);
+        printf("%d",arr[size-2]);
     }
 }
