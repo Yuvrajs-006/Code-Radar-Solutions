@@ -23,6 +23,7 @@ int main(){
         }
         else{
             c+=1;
+            break;
         }
     }
     if(c>0){
