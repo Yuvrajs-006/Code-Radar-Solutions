@@ -7,7 +7,7 @@ int main() {
     scanf("%c",&n);
     switch(n){
         case 'A':
-        printf("Excelllent");
+        printf("Excellent");
         break;
         case 'B':
         printf("Good");
