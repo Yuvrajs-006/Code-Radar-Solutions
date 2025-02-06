@@ -16,21 +16,11 @@ int main(){
             }
         }
     }
-    int c=0;
-    for(int i=0;i<n;i++){
-        if(arr[i]==arr[i+1]){
-            c=0;
-        }
-        else{
-            c+=1;
-            break;
-        }
-    }
-    if(c>0){
+    int size=sizeof(arr)/sizeof(arr[0]);
+    if(arr[0]==arr[size-1]){
         printf("-1");
     }
     else{
-        printf("%d",arr[n-2]);
+        printf("%d",arr[size-2])
     }
-    
 }
