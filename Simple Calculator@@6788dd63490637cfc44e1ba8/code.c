@@ -23,4 +23,5 @@ int main(){
 			printf("invalid operator");
 			break;
 	}
+    return 0;
 }
