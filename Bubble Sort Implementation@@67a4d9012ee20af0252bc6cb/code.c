@@ -11,11 +11,7 @@ void bubblesort(int arr[],int n){
         }
     }
 }
-void printarr(arr,n){
-    for(int i=0;i<n;i++){
-        printf("%d",&n);
-    }
-}
+
 
 int main() {
     int n;
@@ -25,7 +21,9 @@ int main() {
         scanf("%d",&arr[i]);
     }
     bubblesort(arr,n);
-    printarr(arr,n);
+    for (int i = 0; i < n; i++){
+        printf("%d ", arr[i]);
+    }
 
     return 0;
 }
