@@ -14,7 +14,7 @@
     //     printf("%d",arr[i]);
     // }
 
-}
+// }
 
 int main() {
     int n;
@@ -23,6 +23,6 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    sortedarr(arr,n);
+    // sortedarr(arr,n);
     return 0;
 }
