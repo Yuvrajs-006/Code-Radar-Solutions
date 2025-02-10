@@ -8,7 +8,7 @@ int main() {
     int size=sizeof(a)/sizeof(a[0]);
     char b[100];
     int c=0;
-    for(int i=size;i<=0;i--){
+    for(int i=size;i>=0;i--){
         b[c]=a[i];
         c++;
     }
