@@ -7,7 +7,7 @@ int main() {
     scanf("%s",&a);
     int size=sizeof(a)/sizeof(a[0])-1;
     char b[100];
-    int c=size;;
+    int c=size;
     for(int i=0;i<=size;i++){
         b[i]=a[c];
         c-=1;
