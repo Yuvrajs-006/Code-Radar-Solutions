@@ -7,10 +7,10 @@ int main() {
     scanf("%s",&a);
     int size=sizeof(a)/sizeof(a[0])-1;
     char b[100];
-    int c=0;
-    for(int i=size;i>=0;i--){
-        b[c]=a[i];
-        c++;
+    int c=size;;
+    for(int i=0;i<=size;i++){
+        b[i]=a[c];
+        c-=1;
     }
     printf("%s",b);
     return 0;
