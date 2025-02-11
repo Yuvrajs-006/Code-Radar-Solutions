@@ -14,7 +14,7 @@ int main(){
     int flag=0;
     for(int i=0;i<n;i++){
         if(arr[i]==target){
-            flag+=i;
+            flag=i;
             break;
         }
     }
