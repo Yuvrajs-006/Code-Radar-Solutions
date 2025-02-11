@@ -11,17 +11,11 @@ int main(){
     }
     int target;
     scanf("%d",&target);
-    int flag=0;
     for(int i=0;i<n;i++){
         if(arr[i]==target){
-            flag=i;
-            break;
+            printf("%d",i);
+            return 0;
         }
     }
-    if(flag==0){
-        printf("-1");
-    }
-    else{
-        printf("%d",flag);
-    }
+    printf("-1");
 }
