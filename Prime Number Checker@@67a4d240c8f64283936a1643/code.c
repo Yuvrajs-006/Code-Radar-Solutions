@@ -15,11 +15,16 @@
 
 int isPrime(int num){
     int flag=0;
-    for(int i=2;i<num;i++){
-        if(num%i==0){
-            flag=1;
-            break;
+    if(num>1){
+        for(int i=2;i<num;i++){
+            if(num%i==0){
+                flag=1;
+                break;
+            }
         }
+    }
+    else{
+        flag=1;
     }
     if(flag==1){
         return 0;
