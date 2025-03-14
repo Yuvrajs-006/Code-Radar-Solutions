@@ -14,16 +14,16 @@ int p(int a,int b){
 int main(){
     int n;
     scanf("%d",&n);
+    int sum=0;
     int c=0;
-    int b=0;
     while(n>0){
-        int rem=n%2;
-        b=p(10,c)*rem;
-        n/=2;
+        int rem=n%10;
+        sum=p(10,c)*rem;
+        n/=10;
         c++;
-
+        
     }
-    printf("%d",b);
+    printf("%d",sum);
     
     return 0;
 }
