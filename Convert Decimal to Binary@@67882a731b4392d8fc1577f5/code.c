@@ -1,8 +1,13 @@
 #include <stdio.h>
 int p(int a,int b){
     int r=1;
-    for(int i=1;i<=b;i++){
-        r*=a;
+    if(b==0){
+        return 1;
+    }
+    else{
+        for(int i=1;i<=b;i++){
+            r*=a;
+        }
     }
     return r;
 }
