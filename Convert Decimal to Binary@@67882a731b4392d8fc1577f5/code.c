@@ -18,8 +18,8 @@ int main(){
     int c=0;
     while(n>0){
         int rem=n%10;
+        n=n/2;
         sum+=p(10,c)*rem;
-        n/=2;
         c++;
         
     }
