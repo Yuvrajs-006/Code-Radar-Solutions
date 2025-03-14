@@ -1,3 +1,3 @@
-void compressString(char str,char compressed){
-    
+void compressString(char *str,char *compressed){
+
 }
