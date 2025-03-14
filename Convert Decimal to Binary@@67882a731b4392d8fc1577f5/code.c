@@ -1,16 +1,27 @@
 #include <stdio.h>
 
 int main() {
-    int n, binary = 0, place = 1;
+    int n, binary[64], i = 0;
+
     scanf("%d", &n);
 
-    while (n > 0) {
-        int rem = n % 2;
-        n = n / 2;
-        binary += rem * place;
-        place *= 10;
+    if (n == 0) {
+        printf("0");
+        return 0;
     }
 
-    printf("%d", binary);
+    // Convert decimal to binary
+    while (n > 0) {
+        binary[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
+
+    // Print binary in reverse order
+    for (int j = i - 1; j >= 0; j--) {
+        printf("%d", binary[j]);
+    }
+
     return 0;
 }
+
