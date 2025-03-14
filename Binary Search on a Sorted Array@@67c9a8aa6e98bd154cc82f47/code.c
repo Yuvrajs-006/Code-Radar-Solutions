@@ -1,16 +1,18 @@
 int binarySearch(int arr[],int n,int target){
-    // int l=0,h=n-1,m;
-    // m=(l+h)/2;
-    int flag=0;
-    for(int i=0;i<n;i++){
-        if(target==arr[i]){
-            return i;
-            flag=1;
-            break;
-        }
+    int low = 0, high = n - 1;
+
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+
+        if (arr[mid] == key)
+            return mid;  // Element found
+
+        if (arr[mid] < key)
+            low = mid + 1;  // Search in right half
+        else
+            high = mid - 1; // Search in left half
     }
-    if(flag==0){
-        return -1;
-    }
+
+    return -1; 
 
 }
