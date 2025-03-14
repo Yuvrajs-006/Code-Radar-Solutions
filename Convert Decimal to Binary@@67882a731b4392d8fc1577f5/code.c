@@ -14,7 +14,7 @@ int main(){
     int b=0;
     while(n>0){
         int rem=n%2;
-        b=pow(10,c)*rem;
+        b=Pow(10,c)*rem;
         n/=2;
         c++;
 
