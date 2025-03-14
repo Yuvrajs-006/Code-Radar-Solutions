@@ -14,7 +14,7 @@ int p(int a,int b){
 int main(){
     int n;
     scanf("%d",&n);
-    int long sum=0;
+    double sum=0;
     int c=0;
     while(n>0){
         int rem=n%2;
