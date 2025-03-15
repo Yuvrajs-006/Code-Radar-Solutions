@@ -29,7 +29,13 @@ int main(){
         printf("-1");
     }
     else{
-        printf("%d",arr[1]);
+        int num=arr[0];
+        for(int i=0;i<n;i++){
+            if(num!=arr[i]){
+                printf("%d",arr[i]);
+                break;
+            }
+        }
     }
 
 }
