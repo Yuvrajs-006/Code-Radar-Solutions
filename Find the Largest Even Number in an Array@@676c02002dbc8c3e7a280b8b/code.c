@@ -22,7 +22,6 @@ int main(){
     }
     int l=0;
     else{
-    
         for(int i=0;i<=index;i++){
             if(l<arr1[i]){
                 l=arr1[i];
