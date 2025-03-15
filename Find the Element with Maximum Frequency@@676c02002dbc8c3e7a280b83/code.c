@@ -24,5 +24,10 @@ int main(){
             num=arr1[i];
         }
     }
-    printf("%d",num);
+    for(int i=0;i<n;i++){
+        if(num==arr1[i]){
+            printf("%d",arr[i]);
+            break;
+        }
+    }
 }
