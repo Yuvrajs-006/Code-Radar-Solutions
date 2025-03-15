@@ -29,7 +29,7 @@ int main(){
             index++;
         }
     }
-    for(int i=0;i<s;i++){
+    for(int i=0;i<index;i++){
         printf("%d",arr1[i]);
     }
 }
