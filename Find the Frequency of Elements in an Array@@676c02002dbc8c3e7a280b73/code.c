@@ -20,7 +20,7 @@ int main(){
     }
     int index=0;
     int arr1[index];
-    for(int i=0;i<n;i++){
+    for(int i=0;i<s;i++){
         if(arr[index]==arr[i]){
             continue;
         }
@@ -29,7 +29,7 @@ int main(){
             index++;
         }
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<s;i++){
         printf("%d",arr[i]);
     }
 }
