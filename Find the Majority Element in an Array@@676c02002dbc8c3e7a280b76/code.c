@@ -24,11 +24,6 @@ int main(){
         if(arr1[i]>=n/2){
             printf("%d",arr[i]);
             break;
-            p++;
         }
     }
-    if(p>1){
-        printf("%d",-1);
-    }
-
 }
