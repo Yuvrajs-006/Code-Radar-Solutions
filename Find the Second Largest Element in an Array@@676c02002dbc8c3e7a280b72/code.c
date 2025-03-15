@@ -16,11 +16,19 @@ int main(){
             }
         }
     }
-    int size=sizeof(arr)/sizeof(arr[0]);
-    if(arr[0]==arr[size]){
+    int flag=0
+    int num=arr[0];
+    for(int i=0;i<n;i++){
+        if(arr[i]!=num){
+            flag=1;
+            break;
+        }
+    }
+    if(flag==1){
         printf("-1");
     }
     else{
-        printf("%d",arr[size-2]);
+        printf("%d",arr[1]);
     }
+
 }
