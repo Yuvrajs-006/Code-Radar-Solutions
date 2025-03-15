@@ -20,7 +20,7 @@ int main(){
     }
     int index=0;
     int arr1[index];
-    for(int i=0;i<n;i++){
+    for(int i=0;i<s;i++){
         if(arr1[index]==arr[i]){
             continue;
         }
