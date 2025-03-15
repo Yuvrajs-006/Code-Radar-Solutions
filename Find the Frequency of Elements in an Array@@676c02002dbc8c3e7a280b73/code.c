@@ -10,7 +10,6 @@ int main() {
     int arr[size], visited[size];
 
     // Take user input for array elements
-    printf("Enter %d elements:\n", size);
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
         visited[i] = 0; // Initialize visited array
