@@ -14,6 +14,6 @@ int main(){
             sum+=rem;
             n/=10;
         }
-        printf("%d ",num);
+        printf("%d ",sum);
     }
 }
