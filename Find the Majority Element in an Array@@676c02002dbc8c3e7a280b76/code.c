@@ -23,6 +23,7 @@ int main(){
     for(int i=0;i<index;i++){
         if(arr1[i]>=n/2){
             printf("%d",arr[i]);
+            break;
             p++;
         }
     }
