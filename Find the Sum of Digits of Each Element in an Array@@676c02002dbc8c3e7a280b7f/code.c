@@ -9,6 +9,9 @@ int main(){
     for(int i=0;i<n;i++){
         int num=arr[i];
         int sum=0;
+        if(num<0){
+            num*=-1;
+        }
         while(num>0){
             int rem=num%10;
             sum+=rem;
