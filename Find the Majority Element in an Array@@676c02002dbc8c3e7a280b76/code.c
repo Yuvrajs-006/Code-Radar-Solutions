@@ -22,7 +22,7 @@ int main(){
     int p=0;
     for(int i=0;i<index;i++){
         if(arr1[i]>=n/2){
-            printf("%d",arr[i]);
+            printf("%d",arr1[i]);
             break;
         }
     }
