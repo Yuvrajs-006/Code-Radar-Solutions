@@ -4,7 +4,6 @@ int main() {
     int size;
 
     // Take user input for array size
-    printf("Enter the size of the array: ");
     scanf("%d", &size);
 
     int arr[size], visited[size];
