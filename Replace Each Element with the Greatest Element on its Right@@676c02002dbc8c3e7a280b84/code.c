@@ -11,7 +11,7 @@ int main(){
         if(i==n-1){
             arr[i]=-1;
         }
-        for(int j=i+1;<n;j++){
+        for(int j=i+1;j<n;j++){
             if(num<arr[j]){
                 num=arr[j];
             }
