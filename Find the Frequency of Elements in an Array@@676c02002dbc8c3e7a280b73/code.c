@@ -21,11 +21,11 @@ int main(){
     int index=0;
     int arr1[index];
     for(int i=0;i<s;i++){
-        if(arr[index]==arr[i]){
+        if(arr1[index]==arr[i]){
             continue;
         }
         else{
-            arr[index]=arr[i];
+            arr1[index]=arr[i];
             index++;
         }
     }
