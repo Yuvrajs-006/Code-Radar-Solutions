@@ -28,6 +28,15 @@ int main() {
                 break;
             }
         }
+        int flag=0;
+        for(int i=0;i<n;i++){
+            if(arr[i]==arr[0]){
+                flag++;
+            }
+        }
+        if(flag==n){
+            printf("-1");
+        }
     }
     return 0;
 }
