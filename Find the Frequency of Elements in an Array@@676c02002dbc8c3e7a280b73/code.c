@@ -18,4 +18,7 @@ int main(){
             }
         }
     }
+    for(int i=0;i<s;i++){
+        printf("%d ",arr[i]);
+    }
 }
