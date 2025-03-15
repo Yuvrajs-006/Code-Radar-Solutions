@@ -11,9 +11,6 @@ int main(){
         if(arr[i]>=arr[i+1]){
             flag=1;
         }
-        else if(arr[i]<=arr[i+1]){
-            flag=1;
-        }
     }
     if(flag==1){
         printf("YES");
