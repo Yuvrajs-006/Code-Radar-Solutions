@@ -24,7 +24,7 @@ int main(){
             break;
         }
     }
-    if(flag==1 || n==1){
+    if(flag==0 || n==1){
         printf("-1");
     }
     else{
