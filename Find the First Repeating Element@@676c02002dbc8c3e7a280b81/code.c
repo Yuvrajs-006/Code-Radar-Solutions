@@ -20,9 +20,8 @@ int main(){
             printf("%d",num);
             break;
         }
-        else{
-            printf("-1");
-            break;
-        }
+    }
+    if(flag==0){
+        printf("-1");
     }
 }
