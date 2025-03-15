@@ -18,6 +18,6 @@ int main(){
             }
         }
     }
-    int arr1[]=arr[];
+    int arr1[]=arr;
 
 }
