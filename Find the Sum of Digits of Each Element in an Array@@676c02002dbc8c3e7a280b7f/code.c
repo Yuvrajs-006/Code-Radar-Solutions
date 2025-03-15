@@ -12,7 +12,7 @@ int main(){
         while(num>0){
             int rem=num%10;
             sum+=rem;
-            n/=10;
+            num/=10;
         }
         printf("%d ",sum);
     }
