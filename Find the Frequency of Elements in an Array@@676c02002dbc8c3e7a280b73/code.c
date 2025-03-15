@@ -10,27 +10,12 @@ int main(){
 		scanf("%d",&arr[i]);
 	}
     for(int i=0;i<s;i++){
-        for(int j=0;j<s-i;j++){
+        for(int j=0;j<s-i-1;j++){
             if(arr[j]>arr[j+1]){
                 int temp =arr[j+1];
                 arr[j+1]=arr[j];
                 arr[j]=temp;
             }
         }
-    }
-    int index=0;
-    int arr1[index];
-    arr1[index]=arr[0];
-    for(int i=0;i<s;i++){
-        if(arr1[index]==arr[i]){
-            continue;
-        }
-        else{
-            arr1[index]=arr[i];
-            index++;
-        }
-    }
-    for(int i=0;i<s;i++){
-        printf("%d ",arr[i]);
     }
 }
