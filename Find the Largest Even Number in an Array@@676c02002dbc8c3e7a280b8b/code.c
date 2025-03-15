@@ -17,7 +17,7 @@ int main(){
             index++;
         }
     }
-    int l=0;
+    int l=-100;
     if(flag==0){
         printf("-1");
     }
