@@ -19,6 +19,9 @@ int main(){
                 }
             }
         }
+        else{
+            flag=1;
+        }
         if(flag==0){
             c++;
         }
