@@ -19,7 +19,8 @@ int main(){
         }
     }
     int index=0;
-    int arr1[index]={arr[0]};
+    int arr1[index];
+    arr1[index]=arr[0];
     for(int i=0;i<s;i++){
         if(arr1[index]==arr[i]){
             continue;
