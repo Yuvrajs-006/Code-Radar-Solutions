@@ -10,7 +10,7 @@ int main(){
 		scanf("%d",&arr[i]);
 	}
     for(int i=0;i<s;i++){
-        for(int j=0;j<s-i-1;j++){
+        for(int j=0;j<s-i;j++){
             if(arr[j]>arr[j+1]){
                 int temp =arr[j+1];
                 arr[j+1]=arr[j];
