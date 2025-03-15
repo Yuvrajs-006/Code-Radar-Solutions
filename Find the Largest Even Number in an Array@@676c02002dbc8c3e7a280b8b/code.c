@@ -20,8 +20,9 @@ int main(){
     if(flag==0){
         printf("-1");
     }
+    int l=0;
     else{
-        int l=0;
+    
         for(int i=0;i<=index;i++){
             if(l<arr1[i]){
                 l=arr1[i];
