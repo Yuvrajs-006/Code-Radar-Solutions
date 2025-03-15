@@ -18,6 +18,18 @@ int main(){
             }
         }
     }
-    int arr1[]=arr[n];
-
+    int index=0;
+    int arr1[index];
+    for(int i=0;i<n;i++){
+        if(arr1[index]==arr[i]){
+            continue;
+        }
+        else{
+            arr1[index]=arr[i];
+            index++;
+        }
+    }
+    for(int i=0;i<=index;i++){
+        printf("%d ",arr1[i]);
+    }
 }
