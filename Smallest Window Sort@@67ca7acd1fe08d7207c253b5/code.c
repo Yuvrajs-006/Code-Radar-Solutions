@@ -1,4 +1,4 @@
-void findUnsortedSubarray(int arr[],int n){
+int findUnsortedSubarray(int arr[],int n){
     int l;
     int r;
     for(int i=0;i<n-1;i++){
