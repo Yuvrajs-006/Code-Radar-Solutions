@@ -1,18 +1,24 @@
-void selectionSort(char arr[][],int n){
-    for(int i=0;i<n-1;i++){
-        int num=i;
-        for(int j=i+1;j<n;j++){
-            if(arr[j][0]<arr[num][0]){
-                num=j;
+#include <stdio.h>
+#include <string.h>
+
+void selectionSort(char arr[][100], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++) {
+            if (strcmp(arr[j], arr[minIndex]) < 0) { // Compare strings
+                minIndex = j;
             }
         }
-        int temp=arr[i];
-        arr[i]=arr[num];
-        arr[num]=temp;
+        // Swap the strings
+        char temp[100];
+        strcpy(temp, arr[i]);
+        strcpy(arr[i], arr[minIndex]);
+        strcpy(arr[minIndex], temp);
     }
 }
-void printArray(char arr[][],int n){
-    for(int i=0;i<n;i++){
-        printf("%s\n",arr[i]);
+
+void printArray(char arr[][100], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%s\n", arr[i]);
     }
 }
