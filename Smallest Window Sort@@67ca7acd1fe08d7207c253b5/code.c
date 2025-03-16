@@ -1,7 +1,5 @@
 #include <stdlib.h>
-int cmp(const void *a, const void *b) {
-    return (*(int *)a - *(int *)b);
-}
+
 
 int findUnsortedSubarray(int arr[], int n) {
     int l = -1, r = -1;
