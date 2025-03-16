@@ -17,7 +17,7 @@ int findUnsortedSubarray(int arr[], int n) {
     // If the array is already sorted, return
     if (l == -1) {
         printf("The array is already sorted.\n");
-        return;
+        return 0;;
     }
 
     // Find the first unsorted index from the right
