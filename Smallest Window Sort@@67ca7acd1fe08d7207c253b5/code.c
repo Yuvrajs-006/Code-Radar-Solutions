@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void smallestWindowSort(int arr[], int n) {
+void findUnsortedSubarray(int arr[], int n) {
     int l = -1, r = -1;
 
     // Find the first unsorted index from the left
