@@ -14,10 +14,9 @@ int findUnsortedSubarray(int arr[], int n) {
         }
     }
 
-    // If the array is already sorted, return
+    // If the array is already sorted, return 0
     if (l == -1) {
-        printf("The array is already sorted.\n");
-        return 0;;
+        return 0;
     }
 
     // Find the first unsorted index from the right
@@ -28,9 +27,6 @@ int findUnsortedSubarray(int arr[], int n) {
         }
     }
 
-    // Sort only the subarray from l to r
-    qsort(arr + l, r - l + 1, sizeof(int), cmp);
-
-    // Print the modified array
-    return sizeof(arr)/sizeof(arr[0]);
+    // Return the length of the unsorted subarray
+    return (r - l + 1);
 }
