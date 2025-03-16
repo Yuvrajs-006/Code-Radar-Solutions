@@ -32,9 +32,5 @@ int findUnsortedSubarray(int arr[], int n) {
     qsort(arr + l, r - l + 1, sizeof(int), cmp);
 
     // Print the modified array
-    printf("Sorted array: ");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+    return sizeof(arr)/sizeof(arr[0]);
 }
