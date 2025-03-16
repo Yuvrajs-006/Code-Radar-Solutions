@@ -13,5 +13,10 @@ int findUnsortedSubarray(int arr[],int n){
             break;
         }
     }
-    return r-l+1;
+    if(r-l==0){
+        return 0;
+    }
+    else{
+        return (r-l)+1;
+    }
 }
