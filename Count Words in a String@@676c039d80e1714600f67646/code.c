@@ -2,14 +2,20 @@
 #include <string.h>
 
 int main() {
-    char str[] = "C is awesome";
-    char *token = strtok(str, " ");  // First call with string
-    int c=0;
+    char str[100];
+    
+    fgets(str, sizeof(str), stdin);  // Read input with spaces
+    str[strcspn(str, "\n")] = 0;  // Remove newline
+
+    int count = 0;
+    char *token = strtok(str, " ");  // First token
+
     while (token != NULL) {
-        c++;
-        
-        token = strtok(NULL, " ");  // Next call with NULL
+        count++;
+        token = strtok(NULL, " ");  // Next token
     }
-    printf("%d",c);
+
+    printf("%d\n", count);
     return 0;
 }
+
