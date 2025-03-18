@@ -11,10 +11,11 @@ int main(){
         temp[index]=n[i];
         index++;
     }
-    if(strcmp(temp,n)){
-        printf("Yes");
-    }
-    else{
-        printf("No");
-    }
+    // if(strcmp(temp,n)){
+    //     printf("Yes");
+    // }
+    // else{
+    //     printf("No");
+    // }
+    printf("%s",temp);
 }
