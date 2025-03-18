@@ -11,7 +11,7 @@ int main(){
         temp[index]=n[i];
         index++;
     }
-    if(strcmp(temp,n)==0){
+    if(strcmp(n,temp)==0){
         printf("Yes");
     }
     else{
