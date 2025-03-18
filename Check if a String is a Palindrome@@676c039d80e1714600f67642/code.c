@@ -11,7 +11,7 @@ int main(){
         temp[index]=n[i];
         index++;
     }
-    temp[index]="\0";
+    temp[index]='\0';
     int x=strcmp(n,temp);
     if(x==0){
         printf("Yes");
