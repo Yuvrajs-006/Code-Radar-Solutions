@@ -5,7 +5,7 @@
 int main(){
     char n[100];
     scanf("%s",n);
-    char v[]={'a','e','i','o','n','u'};
+    char v[]={'a','e','i','o','u'};
     int s=strlen(n);
     int c=0;
     for(int i=0;i<s;i++){
