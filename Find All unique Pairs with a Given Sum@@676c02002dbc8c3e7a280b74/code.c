@@ -16,7 +16,7 @@ int main() {
     }
     scanf("%d", &t);
 
-    qsort(arr, n, sizeof(int), compare);  // Sort the array (O(n log n))
+
 
     int left = 0, right = n - 1;
     int found = 0;
