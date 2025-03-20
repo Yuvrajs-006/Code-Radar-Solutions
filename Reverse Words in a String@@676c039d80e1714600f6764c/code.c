@@ -10,8 +10,8 @@ int main(){
         char n2[100];
         strcpy(n2,t);
         char n3[100];
-        int index=0
-        for(int i=strlen(n2),n2[i]>=0;i--){
+        int index=0;
+        for(int i=strlen(n2);n2[i]>=0;i--){
             n3[index++]=n2[i];
         }
         printf("%s ",n3);
