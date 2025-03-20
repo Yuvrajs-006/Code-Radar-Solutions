@@ -3,7 +3,7 @@
 
 int main() {
     char n1[100];
-    scanf("%s",n1);
+    scanf("%s\n",n1);
     char e,t;
     scanf("%c%c",&e,&t);
     // int size=strlen(n1);
