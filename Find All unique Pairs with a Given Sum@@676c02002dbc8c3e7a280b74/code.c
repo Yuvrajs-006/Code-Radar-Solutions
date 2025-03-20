@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
 
 int main() {
@@ -10,13 +12,17 @@ int main() {
     }
     scanf("%d", &t);
 
-    int found = 0; // To track if any pair is found
+    int found = 0; // Track if any pair is found
 
     for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {  // Ensure unique pairs
+        for (int j = i + 1; j < n; j++) {  
             if (arr[i] + arr[j] == t) {
                 printf("%d %d\n", arr[i], arr[j]);
-                found = 1; // Pair found
+                found = 1; 
+
+                // Mark arr[j] as used to avoid duplicate prints
+                arr[j] = 1000001; // Assign an out-of-range value (assuming input is within -10^6 to 10^6)
+                break;  // Stop checking after finding the first valid pair
             }
         }
     }
