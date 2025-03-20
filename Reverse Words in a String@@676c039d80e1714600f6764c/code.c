@@ -4,7 +4,7 @@
 int main() {
     char n1[100];
     fgets(n1, sizeof(n1), stdin);
-    n1[strcspn(n1, "\n")] = '\0';  // Remove newline character
+    // n1[strcspn(n1, "\n")] = '\0';  // Remove newline character
 
     char *t = strtok(n1, " ");  // Get first token
 
