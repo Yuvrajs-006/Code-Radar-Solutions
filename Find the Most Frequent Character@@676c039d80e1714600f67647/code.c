@@ -9,7 +9,7 @@ int main() {
     for(int i=0;i<sizes;i++){
         char c=n1[i];
         int count =0;
-        for(int j=0;i<sizes;j++){
+        for(int j=0;j<sizes;j++){
             if(c==n1[j]){
                 count++;
             }
