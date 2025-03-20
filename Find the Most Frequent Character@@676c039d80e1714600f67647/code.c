@@ -34,7 +34,7 @@ int main() {
     int sizec=sizeof(c1)/sizeof(c1[0]);
     int min=c1[0];
     for(int i=0;i<sizec;i++){
-        int numb=c1[i]
+        int numb=c1[i];
         if(min>n1[numb]){
             min=n1[numb];
         }
