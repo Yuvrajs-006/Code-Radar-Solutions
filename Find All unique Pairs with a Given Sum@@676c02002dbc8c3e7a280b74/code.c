@@ -17,7 +17,7 @@ int main(){
                 continue;
             }
             else if((num+arr[j])==t){
-                printf("%d %d",n,arr[j]);
+                printf("%d %d",num,arr[j]);
             }
         }
     
