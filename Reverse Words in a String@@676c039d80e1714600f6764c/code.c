@@ -7,7 +7,8 @@ int main(){
     n1[strcspn(n1, "\n")] = '\0';
     char *t=strtok(n1," ");
     while(t!=NULL){
-        char n2[]=t;
+        char n2[100];
+        strcpy(n2,t);
         char n3[100];
         int index=0
         for(int i=strlen(n2);n2[i]>=0;i--){
