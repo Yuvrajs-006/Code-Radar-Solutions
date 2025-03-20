@@ -1,29 +1,43 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+// Comparator function for qsort
+int compare(const void *a, const void *b) {
+    return (*(int *)a - *(int *)b);
+}
 
 int main() {
     int n;
     scanf("%d", &n);
-    int arr[n], t, used[n];  // `used` array to track already printed elements
+    int arr[n], t;
 
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
-        used[i] = 0;  // Initialize used array to 0
     }
-
     scanf("%d", &t);
 
-    int found = 0; // Track if any pair is found
+    qsort(arr, n, sizeof(int), compare);  // Sort the array (O(n log n))
 
-    for (int i = 0; i < n; i++) {
-        if (used[i]) continue;  // Skip already used numbers
+    int left = 0, right = n - 1;
+    int found = 0;
 
-        for (int j = i + 1; j < n; j++) {  
-            if (arr[i] + arr[j] == t && !used[j]) {
-                printf("%d %d\n", arr[i], arr[j]);
-                found = 1; 
-                used[i] = used[j] = 1;  // Mark both numbers as used
-                break;  // Stop after finding the first valid pair for `arr[i]`
-            }
+    while (left < right) {
+        int sum = arr[left] + arr[right];
+
+        if (sum == t) {
+            printf("%d %d\n", arr[left], arr[right]);
+            found = 1;
+
+            // Move pointers while skipping duplicates
+            int prevLeft = arr[left], prevRight = arr[right];
+            while (left < right && arr[left] == prevLeft) left++;
+            while (left < right && arr[right] == prevRight) right--;
+        } 
+        else if (sum < t) {
+            left++;
+        } 
+        else {
+            right--;
         }
     }
 
@@ -33,5 +47,3 @@ int main() {
 
     return 0;
 }
-
-
