@@ -8,5 +8,5 @@ int main(){
     char t;
     scanf(" %c",&t);
     char *n=strchr(n1,t);
-    printf("%d",n);
+    printf("%ld",n);
 }
