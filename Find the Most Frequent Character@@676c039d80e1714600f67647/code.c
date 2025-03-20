@@ -3,43 +3,35 @@
 
 int main() {
     char n1[100];
-    fgets(n1,sizeof(n1),stdin);
-    int n[100];
-    int sizes=strlen(n1);
-    for(int i=0;i<sizes;i++){
-        char c=n1[i];
-        int count =0;
-        for(int j=0;j<sizes;j++){
-            if(c==n1[j]){
-                count++;
-            }
-        }
-        n[i]=count;
+    fgets(n1, sizeof(n1), stdin);
+
+    // Remove newline if present
+    n1[strcspn(n1, "\n")] = '\0';
+
+    int freq[256] = {0}; // Frequency array for all ASCII characters
+    int sizes = strlen(n1);
+
+    // Count frequency of each character
+    for (int i = 0; i < sizes; i++) {
+        freq[(unsigned char)n1[i]]++;
     }
-    int s=sizeof(n)/sizeof(n[0]);
-    int max=n[0];
-    int c1[100];
-    int index=0;
-    for(int i=0;i<s;i++){
-        if(max<n[i]){
-            max=n[i];
+
+    // Find the maximum frequency
+    int max = 0;
+    for (int i = 0; i < 256; i++) {
+        if (freq[i] > max) {
+            max = freq[i];
         }
     }
-    int count2=0;
-    for(int i=0;i<s;i++){
-        if(n[i]==max){
-            c1[index++]=i;
-        }
-    }   
-    int sizec=sizeof(c1)/sizeof(c1[0]);
-    int min=c1[0];
-    for(int i=0;i<sizec;i++){
-        int numb=c1[i];
-        if(min>n1[numb]){
-            min=n1[numb];
+
+    // Find the smallest ASCII character among the most frequent ones
+    char min_char = 127; // Start with a high ASCII value
+    for (int i = 0; i < 256; i++) {
+        if (freq[i] == max && i < min_char) {
+            min_char = i;
         }
     }
-    printf("%c",min);
-    
+
+    printf("%c\n", min_char);
     return 0;
 }
