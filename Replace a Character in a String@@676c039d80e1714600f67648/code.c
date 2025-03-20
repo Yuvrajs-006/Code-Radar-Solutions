@@ -3,7 +3,7 @@
 
 int main() {
     char n1[100];
-    fgets(n1, sizeof(n1), stdin);
+    scanf("%s",n1);
     char e,t;
     scanf("%c%c",&e,&t);
     int size=strlen(n1);
