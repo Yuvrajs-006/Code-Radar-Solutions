@@ -14,7 +14,7 @@ int main() {
 
     strcat(n1, n2);  // Concatenate n2 to n1
 
-    printf("Concatenated string: %s\n", n1);
+    printf("%s\n", n1);
     
     return 0;
 }
