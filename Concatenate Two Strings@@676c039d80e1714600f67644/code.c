@@ -8,9 +8,9 @@ int main() {
   
     fgets(n2, sizeof(n2), stdin);
 
-    // // Remove the newline character from the strings (optional)
-    // n1[strcspn(n1, "\n")] = 0;
-    // n2[strcspn(n2, "\n")] = 0;
+
+    n1[strcspn(n1, "\n")] = 0;
+    n2[strcspn(n2, "\n")] = 0;
 
     strcat(n1, n2);  // Concatenate n2 to n1
 
