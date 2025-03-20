@@ -7,6 +7,11 @@ int main(){
     scanf("%s",n1);
     char t;
     scanf(" %c",&t);
-    char *n=strchr(n1,t);
-    printf("%ld",n-n1);
+    int c=0;
+    for(int i=0;n1[i]!='\0';i++){
+        if(n1[i]==t){
+            c++;
+        }
+    }
+    printf("%d",c);
 }
