@@ -3,9 +3,9 @@
 
 int main(){
     char n1[100];
-    scanf("%s",n1);
+    scanf("%[^\n]",n1);
     char n2[100];
-    scanf("%s",n2);
+    scanf("%[^\n]",n2);
     strcat(n1,n2);
     printf("%s",n1);
 }
