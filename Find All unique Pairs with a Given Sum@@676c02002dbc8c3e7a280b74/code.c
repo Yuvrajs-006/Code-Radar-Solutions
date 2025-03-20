@@ -27,9 +27,6 @@ int main() {
         }
     }
 
-    if (!found) {
-        printf("No valid pair found\n");
-    }
 
     return 0;
 }
