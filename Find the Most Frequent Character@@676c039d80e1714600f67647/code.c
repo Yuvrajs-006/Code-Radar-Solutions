@@ -5,7 +5,7 @@ int main() {
     char n1[100];
     fgets(n1,sizeof(n1),stdin);
     int n[100];
-    int sizes=strlen(n1)
+    int sizes=strlen(n1);
     for(int i=0;i<sizes;i++){
         char c=n1[i];
         int count =0;
@@ -17,7 +17,7 @@ int main() {
         n[i]=count;
     }
     int s=sizeof(n)/sizeof(n[0]);
-    int max=n[0]
+    int max=n[0];
     int c1[100];
     int index=0;
     for(int i=0;i<s;i++){
@@ -39,7 +39,7 @@ int main() {
             min=n1[numb];
         }
     }
-    printf("%c",min)
+    printf("%c",min);
     
     return 0;
 }
