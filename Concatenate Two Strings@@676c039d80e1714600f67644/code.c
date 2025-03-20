@@ -3,7 +3,7 @@
 
 int main(){
     char n1[100];
-    fgets(n1,100,stdin);
+    scanf("%s",n1);
     char n2[100];
     scanf("%s",n2);
     strcat(n1,n2);
