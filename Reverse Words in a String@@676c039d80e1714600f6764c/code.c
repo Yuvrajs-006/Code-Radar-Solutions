@@ -13,8 +13,10 @@ int main(){
         int index=0;
         for(int i=strlen(n2)-1;i>=0;i--){
             n3[index++]=n2[i];
+
         }
         printf("%s ",n3);
+        t=strtok(NULL," ");
 
     }
 }
