@@ -4,9 +4,9 @@
 
 int main(){
     char n1[100];
-    scanf("%s ",n1);
+    scanf("%s",n1);
     char t;
-    scanf("%c",&t);
+    scanf(" %c",&t);
     char *n=strchr(n1,t);
-    printf("%p",*n);
+    printf("%p",n);
 }
