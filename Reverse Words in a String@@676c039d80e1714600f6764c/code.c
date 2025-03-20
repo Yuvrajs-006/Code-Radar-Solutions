@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main(){
-    int n1[100];
+    char n1[100];
     fgets(n1,sizeof(n1),stdin);
     n1[strcspn(n1, "\n")] = '\0';
     char *t=strtok(n1," ");
