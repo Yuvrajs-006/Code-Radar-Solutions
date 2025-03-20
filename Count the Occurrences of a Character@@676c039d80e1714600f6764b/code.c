@@ -7,6 +7,6 @@ int main(){
     scanf("%s ",n1);
     char t;
     scanf("%c",&t);
-    char n=strchr(n1,t);
-    printf("%d",n);
+    char *n=strchr(n1,t);
+    printf("%d",*n);
 }
