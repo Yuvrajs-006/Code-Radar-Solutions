@@ -3,7 +3,7 @@
 #include <ctype.h>
 int main(){
     char n[100],n1;
-    scanf("%s %c",n,n1);
+    scanf("%s %c",n,&n1);
     int s=strlen(n);
     for(int i=0;i<s;i++){
         char num=tolower(n[i]);
