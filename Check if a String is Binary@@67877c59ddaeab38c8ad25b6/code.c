@@ -4,7 +4,7 @@
 int main(){
     char n[100];
     scanf("%s",n);
-    s=strlen(n);
+    int s=strlen(n);
     for(int i=0;i<s;i++){
         if(n[i]!='1' || n[i]!='0'){
             printf("No");
