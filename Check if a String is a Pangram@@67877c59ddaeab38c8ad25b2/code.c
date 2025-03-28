@@ -3,7 +3,7 @@
 int main(){
     char alph[]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
     char n[100];
-    gets(n);
+    fgets(n);
     n=strlwr(n);
     s=strlen(n);
     int flag=0;
