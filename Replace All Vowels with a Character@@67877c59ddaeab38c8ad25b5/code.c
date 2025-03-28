@@ -7,7 +7,7 @@ int main(){
     int s=strlen(n);
     for(int i=0;i<s;i++){
         char num=tolower(n[i]);
-        if(num=='a'||num=='e'||num=='i'||num=='o'||num=='n'){
+        if(num=='a'||num=='e'||num=='i'||num=='o'||num=='u'){
             n[i]=n1;
         }
     }
