@@ -3,7 +3,7 @@
 #include<ctype.h>
 int main(){
     char n[100];
-    scanf("%s",n);
+    fgets(n,100,stdin);
     int s=strlen(n);
     for(int i=0;i<s;i++){
         n[i]=toupper(n[i]);
