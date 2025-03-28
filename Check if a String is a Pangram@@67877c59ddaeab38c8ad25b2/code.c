@@ -1,26 +1,35 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-int main(){
-    char alph[]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+
+int main() {
+    char alph[] = "abcdefghijklmnopqrstuvwxyz";
     char n[100];
-    fgets(n,100,stdin);
-    int s=strlen(n);
-    int flag=0;
-    for(int i=0;i<26;i++){
-        char c=alph[i];
-        for(int j=0;j<s;j++){
-            if(c==tolower(n[j])){
-                flag=1;
+
+    // Input the string
+    fgets(n, 100, stdin);
+    n[strcspn(n, "\n")] = '\0';  // Remove newline character
+
+    int s = strlen(n);
+
+    // Check for each letter
+    for (int i = 0; i < 26; i++) {
+        char c = alph[i];
+        int flag = 0;
+
+        for (int j = 0; j < s; j++) {
+            if (c == tolower(n[j])) {
+                flag = 1;
                 break;
             }
         }
-        if(flag!=1){
-            printf("No");
-            break;
+        
+        if (!flag) { // If any letter is missing
+            printf("No\n");
+            return 0;
         }
     }
-    if(flag==1){
-        printf("Yes");
-    }
+    
+    printf("Yes\n"); // If all letters are found
+    return 0;
 }
