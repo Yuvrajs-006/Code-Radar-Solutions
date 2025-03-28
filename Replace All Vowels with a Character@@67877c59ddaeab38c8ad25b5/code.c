@@ -11,4 +11,5 @@ int main(){
             n[i]=n1;
         }
     }
+    printf("%s",n);
 }
