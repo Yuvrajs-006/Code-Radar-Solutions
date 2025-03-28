@@ -5,12 +5,15 @@ int main(){
     char n[100];
     scanf("%s",n);
     int s=strlen(n);
+    int flag=0;
     for(int i=0;i<s;i++){
         if(n[i]!='1' || n[i]!='0'){
             printf("No");
-            return 0;
+            flag=1;
+            break;
         }
     }
-    printf("Yes");
-    return 0;
+    if(flag==0){
+        printf("Yes");
+    }
 }
