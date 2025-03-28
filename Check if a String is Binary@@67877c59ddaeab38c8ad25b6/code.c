@@ -7,13 +7,16 @@ int main(){
     int s=strlen(n);
     int flag=0;
     for(int i=0;i<s;i++){
-        if(n[i]!='1' || n[i]!='0'){
-            printf("No");
-            flag=1;
-            break;
+        if(n[i]=='1' || n[i]=='0'){
+            flag+=1;
+        
         }
     }
-    if(flag==0){
+    if(flag==s){
         printf("Yes");
     }
+    else{
+        printf("No");
+    }
+    
 }
