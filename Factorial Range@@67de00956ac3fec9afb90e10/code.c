@@ -1,14 +1,17 @@
 // Your code here...
-void factorialRange(int s,int e){
-    int f=1;
-    if(start>end || start<0 || end<0){
+int factorialRange(int s,int e){
+    if(s>e || s<0 || e<0){
         printf("Invalid range");
         return 0;
     }
     for(int i=s;i<=e;i++){
-        f*=i;
+        int num=i;
+        int  f=1;
+        for(int j=1;j<=num;j++){
+            f*=j;
+        }
+        printf("%d\n",f);
     }
-    printf("%d",f);
     return 0;
 
 }
